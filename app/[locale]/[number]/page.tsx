@@ -4,6 +4,7 @@ import { DICT, isLocale, LOCALES, LOCALE_META } from "@/lib/i18n";
 import { analyzeNumber } from "@/lib/analyze";
 import { Lang } from "@/lib/numberWords";
 import SpeakButton from "@/components/SpeakButton";
+import SearchBox from "@/components/SearchBox";
 
 function parseNum(numberStr: string): number | null {
   if (!/^-?\d+$/.test(numberStr)) return null;
@@ -93,6 +94,9 @@ export default async function NumberPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+<div className="number-page-search">
+  <SearchBox locale={locale as Lang} placeholder={t.placeholder} goLabel={t.go} />
+</div>
       <div className="specimen">
         <div className="specimen-id">
           <span>SAYILAR.NET</span>
