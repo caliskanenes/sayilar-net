@@ -134,3 +134,8 @@ footer { text-align: center; padding: 30px 20px; color: var(--gold-soft); font-s
 .number-page-search { margin-top: 22px; }
 .number-page-search .search-row input { font-size: 16px; padding: 9px 14px; width: 200px; }
 .number-page-search .search-row button { padding: 9px 18px; font-size: 14px; }
+
+.speak-warning {
+  width: 100%; text-align: center; font-size: 12.5px; color: var(--bad);
+  margin-top: 6px; font-family: var(--body);
+}
